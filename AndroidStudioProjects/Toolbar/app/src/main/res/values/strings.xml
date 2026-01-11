@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+    <string name="editTextHint">Please enter your name</string>
+    <string name="menu_item_1">Item 1</string>
+    <string name="menu_item_2">Item 2</string>
+    <string name="menu_sub_item_1">Item 1</string>
+    <string name="menu_sub_item_2">Item 2</string>
+    <string name="menu_item_3">Item 3</string>
+
+</resources>

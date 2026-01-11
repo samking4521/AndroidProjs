@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InchesToCentimetres</string>
+    <string name="placeholder">Enter inch value</string>
+    <string name="buttonTextVal">CONVERT</string>
+    <string name="msg">Enter inch value!</string>
+    <string name="yesButton">Yes</string>
+    <string name="noButton">No</string>
+    <string name="maybeButton">Maybe</string>
+    <string name="textView">Select a button:</string>
+    <string name="rateView">Choose a rating for the best engineer</string>
+    <string name="rateText">Rate = </string>
+    <string name="finalRate">Final rate = </string>
+    <string name="visibleText">This is a visible text</string>
+    <string name="toggleTextView">Toggle the button below to control text visibility</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="Swift">Swift</string>
+    <string name="checkboxView">What language are you using right now?</string>
+</resources>

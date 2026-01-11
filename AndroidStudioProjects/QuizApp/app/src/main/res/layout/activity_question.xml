@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuestionActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+             <TextView
+                 android:id="@+id/question"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 tools:text="What country does the flag belong to?"
+                 android:textSize="30sp"
+                 android:gravity="center"
+                 />
+          <ImageView
+              android:id="@+id/image_flag"
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:contentDescription="@string/the_country_flag"
+              android:src="@drawable/nigeria_flag"
+                android:layout_marginBottom="20dp"
+
+              />
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="10"
+              android:layout_marginBottom="20dp"
+
+
+              >
+              <ProgressBar
+                  android:id="@+id/progressBar"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="9"
+                  android:progress="7"
+                  android:max="10"
+                  style="?android:attr/progressBarStyleHorizontal"
+
+                  />
+
+              <TextView
+                  android:id="@+id/progressText"
+                  android:layout_marginStart="5dp"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  tools:text="0/10"
+                  android:textSize="16sp"
+                  />
+              
+          </androidx.appcompat.widget.LinearLayoutCompat>
+          <TextView
+             android:id="@+id/option1"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              tools:text="Option 1"
+              android:textSize="18sp"
+              android:gravity="center"
+              android:layout_marginBottom="10dp"
+              android:textColor="@color/gray"
+              android:background="@drawable/option_bg"
+              />
+          <TextView
+              android:id="@+id/option2"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              tools:text="Option 2"
+              android:textSize="18sp"
+              android:gravity="center"
+              android:layout_marginBottom="10dp"
+              android:textColor="@color/gray"
+              android:background="@drawable/option_bg"
+              />
+          <TextView
+              android:id="@+id/option3"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              tools:text="Option 3"
+              android:textSize="18sp"
+              android:gravity="center"
+              android:layout_marginBottom="10dp"
+              android:textColor="@color/gray"
+              android:background="@drawable/option_bg"
+              />
+          <TextView
+              android:id="@+id/option4"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              tools:text="Option 4"
+              android:textSize="18sp"
+              android:gravity="center"
+              android:layout_marginBottom="10dp"
+              android:textColor="@color/gray"
+              android:background="@drawable/option_bg"
+              />
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/startButton"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/check"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              android:textAllCaps="true"
+              app:cornerRadius="5dp"
+
+
+              />
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>

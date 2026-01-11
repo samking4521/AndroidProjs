@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AudioPlayer">
+
+     <com.google.android.material.appbar.MaterialToolbar
+         android:id="@+id/topBar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         >
+         <TextView
+             android:id="@+id/audioName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="my_recordings"
+             android:gravity="center"
+             android:paddingEnd="30dp"
+             android:textSize="18dp"
+             />
+     </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <LinearLayout
+        android:id="@+id/speedCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar"
+        android:orientation="horizontal"
+       android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/speed_bg"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:layout_marginEnd="5dp"
+            />
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0"
+            />
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="40"
+        android:progressTint="@color/orange"
+        android:thumbTint="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/bottomCont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottomCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/startDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+
+                />
+            <TextView
+                android:id="@+id/endDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:00"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageButton
+                android:id="@+id/backwardBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_backward"
+                android:background="@color/white"
+                />
+
+            <ImageButton
+                android:id="@+id/playBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/play"
+                android:layout_marginHorizontal="40dp"
+                android:background="@drawable/record_btn"
+                />
+
+            <ImageButton
+                android:id="@+id/forwardBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_forward"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

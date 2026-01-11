@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Layouts" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <item name="colorPrimary">@color/green</item> &lt;!&ndash; ActionBar background &ndash;&gt;-->
+<!--        <item name="colorPrimaryDark">@color/cyan</item> &lt;!&ndash; StatusBar &ndash;&gt;-->
+<!--        <item name="colorAccent">@color/magenta</item>-->
+    </style>
+
+    <style name="Theme.Layouts" parent="Base.Theme.Layouts" />
+</resources>

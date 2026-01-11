@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BackgroundTasks</string>
+    <string name="launch_task">Launch Task</string>
+    <string name="changecolor">ChangeColor</string>
+    <string name="_0">0</string>
+    <string name="next_screen">Next Screen</string>
+    <string name="go_back">go back</string>
+</resources>

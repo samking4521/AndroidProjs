@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:padding="20dp"
+
+    >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/playitemicon"
+            android:src="@drawable/ic_play"
+
+            />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        >
+          <TextView
+              android:id="@+id/filename"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="18sp"
+              android:text="First recording"
+              android:layout_marginBottom="5dp"
+              />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/duration"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="00:02"
+                   android:layout_marginEnd="10dp"
+                   android:textColor="@color/grayDark"
+                   android:textSize="16sp"
+                   />
+               <TextView
+                   android:id="@+id/date"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="01/01/2012"
+                   android:textColor="@color/grayDark"
+                   android:textSize="16sp"
+                   />
+           </LinearLayout>
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

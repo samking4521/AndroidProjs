@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ResultActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="top|center"
+    android:background="@drawable/app_bg"
+    >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/result"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:layout_marginBottom="10dp"
+          />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/golden_cup"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/thetrophy"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/congratulation"
+        android:layout_marginBottom="25dp"
+        />
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:text="Name"
+
+        android:layout_marginBottom="10dp"
+
+        />
+    <TextView
+        android:id="@+id/playerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/opaqueWhite"
+        tools:text="You scored 1 out of 10 questions"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/finishButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/finish"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:cornerRadius="5dp"
+        android:background="@drawable/finish_button_bg"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

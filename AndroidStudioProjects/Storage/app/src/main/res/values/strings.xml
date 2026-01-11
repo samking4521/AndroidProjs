@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Storage</string>
+    <string name="external_storage">External Storage</string>
+    <string name="enter_file_contents">Enter file contents</string>
+    <string name="save_file">Save File</string>
+    <string name="load_file">Load File</string>
+    <string name="external_file_contents_will_appear_here">External file contents will appear here...</string>
+    <string name="save_file_to_location">Save file to location</string>
+</resources>

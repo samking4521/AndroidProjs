@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+            android:elevation="0dp"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            >
+
+                 <com.google.android.material.appbar.CollapsingToolbarLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="130dp"
+                     app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                         >
+                         <com.google.android.material.appbar.MaterialToolbar
+                             android:id="@+id/toolbar"
+                             android:layout_width="match_parent"
+                             android:layout_height="?actionBarSize"
+                                 app:title="Recordings"/>
+                     <RelativeLayout
+                         android:id="@+id/editBar"
+                         android:visibility="gone"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingEnd="16dp"
+                         android:paddingStart="16dp"
+                         android:padding="8dp"
+                         >
+                          <ImageButton
+                              android:id="@+id/btnClose"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/ic_close"
+                              />
+                         <ImageButton
+                             android:id="@+id/btnSelectAll"
+                             android:background="@drawable/ic_list"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentEnd="true"
+                             />
+                     </RelativeLayout>
+                 </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SearchInputStyle"
+                app:hintEnabled="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_input"
+                    android:hint="Search audio record"
+                    android:inputType="text"
+                    android:textColor="@color/colorText"
+                    android:imeOptions="actionSearch"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:elevation="8dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="90dp"
+            android:gravity="center"
+            android:id="@+id/btnDelete"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:clickable="false"
+                android:backgroundTint="@color/grayDarkDisabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_round_delete" />
+
+            <TextView
+                android:id="@+id/tvDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayDarkDisabled"
+                android:text="Delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/btnEdit"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonEdit"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grayDarkDisabled"
+                android:background="@drawable/ic_edit" />
+
+            <TextView
+
+                android:id="@+id/textViewEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayDarkDisabled"
+                android:text="Edit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

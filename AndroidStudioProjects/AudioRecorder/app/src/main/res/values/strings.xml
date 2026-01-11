@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AudioRecorder</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="list_button">list button</string>
+    <string name="done">done</string>
+    <string name="record">record</string>
+    <string name="cancel">cancel</string>
+    <string name="save_record">Save Record!</string>
+    <string name="cancel_text">cancel</string>
+    <string name="ok">OK</string>
+    <string name="tv_timer_text">00:00:00</string>
+    <string name="play_button">Play button</string>
+    <string name="record_play_mp3">record_play.mp3</string>
+    <string name="wow_fm">wow_fm</string>
+</resources>

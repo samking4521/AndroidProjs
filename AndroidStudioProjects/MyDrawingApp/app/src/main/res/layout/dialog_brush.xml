@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_bg"
+    android:padding="10dp">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20"
+            android:thumbTint="@color/red"
+            android:progressTint="@color/red"
+            android:progressBackgroundTint="@color/midBlack"
+            />
+     <TextView
+         android:id="@+id/seekText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:text="@string/_20"
+         android:textAlignment="center"
+         android:textSize="20sp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:layout_below="@id/seekBar"
+
+
+         />
+</RelativeLayout>

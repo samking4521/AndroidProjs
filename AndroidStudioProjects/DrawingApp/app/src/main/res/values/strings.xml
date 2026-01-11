@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Drawing App</string>
+    <string name="color_picker">color picker</string>
+    <string name="undo_button">Undo button</string>
+    <string name="gallery_button">Gallery button</string>
+    <string name="save_button">Save button</string>
+    <string name="brush_button">Brush button</string>
+    <string name="red_button">Red button</string>
+    <string name="orange_button">Orange button</string>
+    <string name="blue_button">Blue button</string>
+    <string name="green_button">Green button</string>
+    <string name="purple_button">Purple Button</string>
+    <string name="user_image">User image</string>
+    <string name="dialog_yes">ALLOW</string>
+</resources>

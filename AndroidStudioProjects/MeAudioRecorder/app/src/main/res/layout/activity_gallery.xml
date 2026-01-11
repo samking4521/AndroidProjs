@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Gallery">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:elevation="0dp"
+        android:background="@android:color/transparent">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/white"
+          >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Recordings" />
+             <RelativeLayout
+
+                 android:id="@+id/topbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingHorizontal="20dp"
+                 android:paddingTop="10dp"
+                 android:visibility="gone"
+
+
+                 >
+                 <ImageButton
+                     android:id="@+id/cancelEdit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentStart="true"
+                     android:src="@drawable/disable_cancel_btn"
+                     android:background="@color/white"
+
+                     />
+                 <ImageButton
+                     android:id="@+id/selectAll"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentEnd="true"
+                     android:src="@drawable/list_record"
+                     android:background="@color/white"
+                     />
+
+
+             </RelativeLayout>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <!-- Search bar stays below collapsing toolbar -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SearchInputStyle"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search audio record"
+                android:inputType="text"
+                android:textColor="@color/colorText"
+                android:imeOptions="actionSearch" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/listBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:elevation="5dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        >
+        <LinearLayout
+            android:id="@+id/delBtnCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="50dp"
+            android:gravity="center_horizontal"
+            android:clickable="false"
+            >
+            <ImageView
+                android:id="@+id/delBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                />
+            <TextView
+                android:id="@+id/btnDelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="16sp"
+                android:textColor="@color/grayMid"
+                />
+        </LinearLayout>
+           <LinearLayout
+               android:id="@+id/editBtnCont"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center_horizontal"
+               android:clickable="false"
+               >
+               <ImageView
+                   android:id="@+id/editBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_edit"
+                   />
+               <TextView
+                   android:id="@+id/btnEditText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Edit"
+                   android:textSize="16dp"
+                   android:textColor="@color/grayMid"
+                   />
+           </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
